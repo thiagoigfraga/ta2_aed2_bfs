@@ -10,6 +10,7 @@ struct node {
 };
 
 /* Seguindo as boas práticas, os protótipos das funções utilizadas */
+void printLevelOrder(struct node* root)
 void printCurrentLevel(struct node* root, int level);
 int height(struct node* node);
 struct node* newNode(int valor);
