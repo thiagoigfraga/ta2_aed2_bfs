@@ -54,11 +54,9 @@ int height(struct node* node)
 	if (node == NULL)
 		return 0;
 	else {
-		/* compute the height of each subtree */
 		int lheight = height(node->esquerda);
 		int rheight = height(node->direita);
 
-		/* use the larger one */
 		if (lheight > rheight)
 			return (lheight + 1);
 		else
@@ -97,3 +95,5 @@ int main()
 
 	return 0;
 }
+
+//Referência utilizada: https://www.geeksforgeeks.org/level-order-tree-traversal/
